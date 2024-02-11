@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Eco-Aware globe | globe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../css/globes.css" />
+    <script src="//unpkg.com/d3-dsv"></script>
+    <script src="//unpkg.com/d3"></script>
+    <script src="//unpkg.com/index-array-by"></script>
+    <script src="//unpkg.com/globe.gl"></script>
+  </head>
+  <body>
+    <script></script>
+    <!-- header/navbar/globe buttons -->
+    <div class="btn-group" style="width: 100%">
+      <a href="../../index.html">
+        <button style="width: 33.33%">Eco-Globe</button>
+      </a>
+      <a href="">
+        <button style="width: 33.33%" class="btn-active">
+          Strategy(TBC-proposal essay)
+        </button>
+      </a>
+      <a href="https://snfkitchen.com/pages/climate-commitment">
+        <button style="width: 33.33%">Climate Act (scroll down)</button>
+      </a>
+    </div>
+    <!--legend-->
+
+    <!-- information modular window -->
+    <div id="information-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Env St 40 | OpenAQ</h2>
+        </div>
+        <div class="modal-body">
+          <p></p>
+          <p>
+            <strong>Eco-Pak Solution</strong> is all about creating change on a
+            global scale, by educating individuals striving to be interpret and
+            make an impact. We aim to address the issue of how air pollution is
+            a major contributor to premature mortality. 100,000 fatalities in
+            2016. PM2.5 responsible for over 90% of air pollution-related health
+            damages.
+          </p>
+          <p>
+            Our goal is to inform users of the pollutants (measured in pmq) and
+            social good, starting here at UCSB.
+          </p>
+
+          <p>
+            Learn and join Eco-Aware's mission to provide lasting solutions to
+            pollutant efficiency and waste
+          </p>
+
+          <p>Env St 40</p>
+          <p>Anthony Lo</p>
+        </div>
+      </div>
+    </div>
+    <!-- how you can help modular window -->
+    <div id="help-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>environment</h2>
+        </div>
+        <div class="modal-body">
+          <p style="font-size: larger">
+            <strong>save isla vista, start local</strong>
+          </p>
+          <u1>
+            <li>riding a bicycle or walking</li>
+
+            <li>pick up after yourselves</li>
+            <li>Beach cleanups</li>
+            <li>Join us in the SB Coastal Cleanup!</li>
+            <li>
+              Donate to UCSB charities focused on clearing the air, click below!
+              <a href="https://coastalfund.as.ucsb.edu/" target="_blank"
+                >https://coastalfund.as.ucsb.edu/</a
+              >
+            </li>
+          </u1>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <!-- globe -->
+    <div id="globeViz"></div>
+    <!-- bottom button navbar -->
+    <div class="btn-group" style="width: 100%">
+      <button style="width: 50%" id="find-out-more">
+        Cause and Solution (click me)
+      </button>
+      <button style="width: 50%" id="how-you-can-help">Contribute</button>
+    </div>
+    <script src="../../globes/pollution/globe_pollution.js"></script>
+    <script src="../../js/modals.js"></script>
+  </body>
+</html>
